@@ -1,13 +1,14 @@
 package entity;
 
-import java.util.Date;
+import java.sql.Date;
 
 public class NhanVien {
-    private String maNhanVien;
+	private String maNhanVien;
 	private String hoTen;
+	
 	private Date ngaySinh;
 	private String diaChi;
-	private int soDT;
+	private String soDT;
 	private String eMail;
 	public String getMaNhanVien() {
 		return maNhanVien;
@@ -33,10 +34,10 @@ public class NhanVien {
 	public void setDiaChi(String diaChi) {
 		this.diaChi = diaChi;
 	}
-	public int getSoDT() {
+	public String getSoDT() {
 		return soDT;
 	}
-	public void setSoDT(int soDT) {
+	public void setSoDT(String soDT) {
 		this.soDT = soDT;
 	}
 	public String geteMail() {
@@ -45,7 +46,7 @@ public class NhanVien {
 	public void seteMail(String eMail) {
 		this.eMail = eMail;
 	}
-	public NhanVien(String maNhanVien, String hoTen, Date ngaySinh, String diaChi, int soDT, String eMail) {
+	public NhanVien(String maNhanVien, String hoTen, Date ngaySinh, String diaChi, String soDT, String eMail) {
 		super();
 		this.maNhanVien = maNhanVien;
 		this.hoTen = hoTen;
@@ -58,13 +59,10 @@ public class NhanVien {
 		super();
 		this.maNhanVien = maNhanVien;
 	}
-
-    public NhanVien() {
-    }
-
-    @Override
+	@Override
 	public String toString() {
 		return "NhanVien [maNhanVien=" + maNhanVien + ", hoTen=" + hoTen + ", ngaySinh=" + ngaySinh + ", diaChi="
 				+ diaChi + ", soDT=" + soDT + ", eMail=" + eMail + "]";
 	}
+	
 }
