@@ -1,9 +1,12 @@
 package entity;
 
+
+
+
 public class KhachHang {
-    private String maKH;
+	private String maKH;
 	private String tenKH;
-	private int soDT;
+	private String soDT;
 	private String eMail;
 	private String diaChi;
 	public String getMaKH() {
@@ -18,10 +21,10 @@ public class KhachHang {
 	public void setTenKH(String tenKH) {
 		this.tenKH = tenKH;
 	}
-	public int getSoDT() {
+	public String getSoDT() {
 		return soDT;
 	}
-	public void setSoDT(int soDT) {
+	public void setSoDT(String soDT) {
 		this.soDT = soDT;
 	}
 	public String geteMail() {
@@ -36,7 +39,7 @@ public class KhachHang {
 	public void setDiaChi(String diaChi) {
 		this.diaChi = diaChi;
 	}
-	public KhachHang(String maKH, String tenKH, int soDT, String eMail, String diaChi) {
+	public KhachHang(String maKH, String tenKH, String soDT, String eMail, String diaChi) {
 		super();
 		this.maKH = maKH;
 		this.tenKH = tenKH;
@@ -44,7 +47,6 @@ public class KhachHang {
 		this.eMail = eMail;
 		this.diaChi = diaChi;
 	}
-
 	public KhachHang(String maKH) {
 		super();
 		this.maKH = maKH;
@@ -54,4 +56,5 @@ public class KhachHang {
 		return "KhachHang [maKH=" + maKH + ", tenKH=" + tenKH + ", soDT=" + soDT + ", eMail=" + eMail + ", diaChi="
 				+ diaChi + "]";
 	}
+	
 }
